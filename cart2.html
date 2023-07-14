@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mimi'sStore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    
+    <link rel="icon" type="image" href="img\logo.jpg">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&family=Open+Sans&display=swap"
+        rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css"> -->
+
+
+    <script src="https://js.instamojo.com/v1/checkout.js"></script>
+    <script>
+      /* Start client-defined Callback Handler Functions */
+      function onOpenHandler () {
+        alert('Payments Modal is Opened');
+      }
+
+      function onCloseHandler () {
+        alert('Payments Modal is Closed');
+      }
+
+      function onPaymentSuccessHandler (response) {
+        alert('Payment Success');
+        console.log('Payment Success Response', response);
+      }
+
+      function onPaymentFailureHandler (response) {
+        alert('Payment Failure');
+        console.log('Payment Failure Response', response);
+      }
+      /* End client-defined Callback Handler Functions */
+
+      /* Configuring Handlers */
+      Instamojo.configure({
+        handlers: {
+          onOpen: onOpenHandler,
+          onClose: onCloseHandler,
+          onSuccess: onPaymentSuccessHandler,
+          onFailure: onPaymentFailureHandler
+        }
+      });
+      
+      function onButtonClick() {
+        Instamojo.open('https://test.instamojo.com/@nishusingh201043');
+      }
+    </script>
+ 
+
+</head>
+
+<body class="page">
+    <header>
+        <a href="#"><img src="img\Logo.jpeg" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart2.html"><i class="fas fa-shopping-bag"></i></a></li>
+             
+                <a href="#" id="close"><i class="fas fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart2.html"><i class="fas fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </header>
+
+    <section id="page-header" class="aboutus">
+        <section id="img7">
+            <h2 id="knowUs">#Shop with Us </h2>
+            <p id="stayhome4">Radiant Embellishment </p>
+        </section>
+    </section>
+    <!-- <div class="cart">
+        <div class = "cart-content">
+           <div class="cart-box">
+           <img src="img\Handmade Scrunchies.jpg" alt="" class="cart-img">
+           <div class="detail-box">
+              <div class="cart-product-title">scrunchy </div>
+              <div class="cart-price">Rs25</div>
+              <input type="number" value="1" class="cart-quantity">
+              </div>
+        
+              <i class="fa-solid fa-trash cart-remove"></i>
+            
+        </div>
+        
+        </div>
+        
+        
+        <div class="total">
+        
+        <div class="total-title">Total</div> 
+        <div class="total-price">Rs0</div>
+        </div>
+        <button type="button" class="normal" id="btn-buy"> BuyNow
+        </button>
+        <i class="bx bx-x" id="close"></i>
+        
+        </div>
+        
+        </div> -->
+
+
+
+        
+    <div class="producstOnCart ">
+        <div class="overlay"></div>
+        <div class="top">
+            <button id="closeButton">
+                <i class="fas fa-times-circle"></i>
+            </button>
+            <h3>Cart</h3>
+        </div>
+        <ul id="buyItems">
+            <h4 class="empty">Your shopping cart is empty</h4>
+            <!-- <li class="buyItem">
+    <img src="Images/producs-images/Mobiles/galaxynote10.png">
+    <div>
+      <h5>Products Name</h5>
+      <h6>$199</h6>
+      <div>
+        <button>-</button>
+        <span class="countOfProduct">1</span>
+        <button>+</button>
+      </div>
+    </div>
+  </li> -->
+        </ul>
+        <button class="btn checkout hidden">Check out</button>
+    </div>
+   <section id="cart" class="section-p1">
+    <table width=""100%>
+        <thead>
+            <tr>
+                <td>Remove</td>
+                <td>Image</td>
+                <td>Product</td>
+                <td>Price</td>
+                <td>Quantity</td>
+                <td>Subtotal</td>
+            </tr>    
+        </thead>
+        <tbody class="listOfprdct">
+            <tr class="onePrdt">
+              <div> 
+               <td class="closeCart"><i class="fas fa-times-circle "></i><a href="#"></a></td>
+               <td><img src="img\Handmade Scrunchies.jpg" alt=""></td>
+               <td>Hadmade Scrunchies</td>
+               <td>Rs. 30</td>
+               <td><input type="number" value="1"></td>
+               <td>Rs. 30</td>
+             </div> 
+            </tr>
+            <tr>
+                <td><i class="fas fa-times-circle"></i><a href="#"></a></td>
+                <td><img src="img\Handmade Scrunchies.jpg" alt=""></td>
+                <td>Hadmade Scrunchies</td>
+                <td>Rs. 30</td>
+                <td><input type="number" value="1"></td>
+                <td>Rs. 30</td>
+             </tr>
+             <tr>
+                <td><i class="fas fa-times-circle"></i><a href="#"></a></td>
+                <td><img src="img\Handmade Scrunchies.jpg" alt=""></td>
+                <td>Hadmade Scrunchies</td>
+                <td>Rs. 30</td>
+                <td><input type="number" value="1"></td>
+                <td>Rs. 30</td>
+             </tr> 
+        </tbody>
+    </table>
+   </section>
+
+   <section id="cart-add" class="section-p1">
+    <!-- <div id="coupon">
+        <h3>Apply Coupon</h3>
+        <div>
+            <input type="text" placeholder="Enter Your Coupon">
+            <button class="normal">Apply</button>  
+        </div>      
+    </div> -->
+    <div id="subtotal">
+        <h3>Cart Total</h3>
+        <table>
+            <tr>
+                <td>Cart Subtotal</td>
+                <td>
+                    <!-- Rs 90 -->
+                    
+                        <!--The total prices of products in the shopping cart -->
+                        <h6 id="sum-prices2"></h6>
+                  
+                </td>  
+            </tr>
+            <tr>
+                <td>Shipping</td>
+                <td>Free</td>
+            </tr>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td>
+                    <!-- <strong>Rs 90</strong> -->
+
+                    <div class="sum-prices">
+                        <!--Shopping cart logo-->
+                        <i></i>
+                        <!--The total prices of products in the shopping cart -->
+                        <h6 id="sum-prices"></h6>
+                    </div>
+                </td>
+                
+            </tr>
+        </table>
+        <button class="normal" onclick="onButtonClick()">Proceed to Checkout</button>
+
+    </div>
+   </section>
+
+
+   <footer class="section-p1">
+    <div class="col">
+      <img src="img\Logo.jpeg" class="logo" id="contact-logo" alt=""><br>
+      <h4>Contact At</h4>
+      <p><strong>Address: </strong> B-52/2, Aamir Park Society, N/r Memon hall, Juhapura</p>
+      <p><strong>Phone: </strong>9484611810</p>
+      <p><strong>Hours: </strong>9 AM to 9 PM</p>
+      <div class="follow">
+        <h4>Follow us</h4>
+        <div class="icon">
+          <a href="https://m.facebook.com/profile.php?id=100093313973186&v=info&ref=ig_profile_ac&funlid=esyN2OdeI6j4sCaz"> <i class="fab fa-facebook-f">&ensp; </i></a>
+          <a href="https://m.facebook.com/profile.php?id=100093313973186&v=info&ref=ig_profile_ac&funlid=esyN2OdeI6j4sCaz"></a><i class="fab fa-twitter">&ensp; </i></a>
+          <a href="https://instagram.com/mimisstore.in?igshid=YmM0MjE2YWMzOA=="><i class="fab fa-instagram">&ensp; </i></a>
+          <a href="https://www.pinterest.com/mimi_sstore/?invite_code=0e7c68d6cbeb4784a09a07487ce3e92b&sender=947444977766612737"><i class="fab fa-pinterest-p">&ensp; </i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <h4>About</h4>
+      <a href="about.html">About Us</a>
+      <a href="#">Delivery Information</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="col">
+      <h4>My Account</h4>
+      <a href="#">Sign In</a>
+      <a href="#">View Cart</a>
+      <a href="#">My wishlist</a>
+      <a href="#">Track My Order</a>
+      <a href="#">Help</a>
+    </div>
+    <div class="col install">
+      <h4>Install App</h4>
+      <p>From App Store or Google Play</p>
+      <div class="row">
+        <img src="img/playstore.png" class="logo" id="playstore" alt="">
+      </div>
+      <p>Secured Payment Gateways</p>
+      <img src="img/card.png" class="pay" alt="">
+    </div>
+    <div class="copyright">
+      <p>© 2023 Mimi'sStore | <a href="https://www.linkedin.com/in/aiman-shaikh-1a89b022a/">Developed by Aiman Shaikh</a> </p>
+    </div>
+
+  </footer>
+
+    <script src="script.js">
+    </script>
+
+<script src="cart.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mimi'sStore</title>
+  <link rel="icon" type="image" href="img\logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&family=Open+Sans&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="main2.css">
+</head>
+
+<body class="page">
+  <header>
+    <a href="#"><img src="img\Logo.jpeg" class="logo" alt=""></a>
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <!-- <li id="lg-bag"><a href="cart.html"><i class="fas fa-shopping-bag"></i></a></li> -->
+
+         <!--Shopping cart-->
+         <div class="shopping-cart">
+          <div class="sum-prices">
+              <!--Shopping cart logo-->
+              <i
+                  class="fas fa-shopping-cart shoppingCartButton"
+              ></i>
+              <!--The total prices of products in the shopping cart -->
+              <h6 id="sum-prices"></h6>
+          </div>
+        <a href="#" id="close"><i class="fas fa-times"></i></a>
+      </ul>
+    </div>
+    <div id="mobile">
+      <a href="cart2.html"><i class="fas fa-shopping-bag"></i></a>
+      <i id="bar" class="fas fa-outdent"></i>
+    </div>
+
+    <div class="producstOnCart hide">
+      <div class="overlay"></div>
+      <div class="top">
+          <button id="closeButton">
+              <i class="fas fa-times-circle"></i>
+          </button>
+          <h3>Cart</h3>
+      </div>
+      <ul id="buyItems">
+          <h4 class="empty">Your shopping cart is empty</h4>
+          <!-- <li class="buyItem">
+  <img src="Images/producs-images/Mobiles/galaxynote10.png">
+  <div>
+    <h5>Products Name</h5>
+    <h6>$199</h6>
+    <div>
+      <button>-</button>
+      <span class="countOfProduct">1</span>
+      <button>+</button>
+    </div>
+  </div>
+</li> -->
+      </ul>
+      <button class="btn checkout hidden" onclick="location.href = 'cart2.html';">Check out</button>
+  </div>
+  </header>
+
+  <section class="complete">
+    <section id="hero">
+      <!-- <h4>Trade-in-offer</h4> -->
+      <h2>Let's be the</h2>
+      <h1>Gorgeous One</h1>
+      <!-- <h2>one</h2> -->
+      <p id="buymore">Buy more and more... </p>
+      <button class="nowrap"><a href="shop.html">Shop Now</a></button>
+
+    </section>
+    <!-- <img src="img\mainimg.png" class="targetimg2" alt=""> -->
+    <img src="img\p14.jpeg" class="targetimg" alt="">
+
+  </section>
+  <section id="features" class="section-p1">
+    <div class="febox">
+      <img src="img\free_shipping.png" class="free_shipping" alt="" srcset="">
+      <h6>Free Shipping</h6>
+    </div>
+    <div class="febox">
+      <img src="img\online_order.jpg" class="free_shipping" alt="" srcset="">
+      <h6>OnlineOrder</h6>
+    </div>
+    <div class="febox">
+      <img src="img\promotions.jpg" class="free_shipping" alt="" srcset="">
+      <h6>Promotions</h6>
+    </div>
+    <div class="febox">
+      <img src="img\save_money.png" class="free_shipping" id="save" alt="" srcset="">
+      <h6>Save Money</h6>
+    </div>
+    <div class="febox">
+      <img src="img\happy_sell.png" id="happy_sell" class="free_shipping" alt="" srcset="">
+      <h6>Happy Sell</h6>
+    </div>
+    <div class="febox">
+      <img src="img\query_support.jpg" class="free_shipping" alt="" srcset="">
+      <h6>24/7Support</h6>
+    </div>
+  </section>
+  <section id="product1" class="section-p1">
+    <h2>Featured Products</h2>
+    <p>Summer Collection New Designs</p>
+    <!-- <div class = "pro-container">
+           <div class="pro">
+               <img src="img\Handmade Scrunchies.jpg" alt="">
+               <div class="des">
+                <span>handmade</span>
+                <h5>Colorful Scrunchies</h5>
+                <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              
+                </div>
+                <h4>Rs 30</h4>
+              </div>  
+              <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+           </div>
+           <div class="pro">
+            <img src="img\Handmade Scrunchies.jpg" alt="">
+            <div class="des">
+             <span>handmade</span>
+             <h5>Colorful Scrunchies</h5>
+             <div class="star">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+           
+             </div>
+             <h4>Rs 30</h4>
+           </div>  
+           <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img\Handmade Scrunchies.jpg" alt="">
+          <div class="des">
+           <span>handmade</span>
+           <h5>Colorful Scrunchies</h5>
+           <div class="star">
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+             <i class="fas fa-star"></i>
+         
+           </div>
+           <h4>Rs 30</h4>
+         </div>  
+         <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+      </div>
+      <div class="pro">
+        <img src="img\Handmade Scrunchies.jpg" alt="">
+        <div class="des">
+         <span>handmade</span>
+         <h5>Colorful Scrunchies</h5>
+         <div class="star">
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+       
+         </div>
+         <h4>Rs 30</h4>
+       </div>  
+       <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="img\Handmade Scrunchies.jpg" alt="">
+      <div class="des">
+       <span>handmade</span>
+       <h5>Colorful Scrunchies</h5>
+       <div class="star">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+     
+       </div>
+       <h4>Rs 30</h4>
+     </div>  
+     <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+      </div>
+      <div class="pro">
+        <img src="img\Handmade Scrunchies.jpg" alt="">
+        <div class="des">
+         <span>handmade</span>
+         <h5>Colorful Scrunchies</h5>
+         <div class="star">
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+       
+         </div>
+         <h4>Rs 30</h4>
+       </div>  
+       <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+    </div>
+    <div class="pro">
+      <img src="img\Handmade Scrunchies.jpg" alt="">
+      <div class="des">
+       <span>handmade</span>
+       <h5>Colorful Scrunchies</h5>
+       <div class="star">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+     
+       </div>
+       <h4>Rs 30</h4>
+     </div>  
+     <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+  </div>
+  <div class="pro">
+    <img src="img\Handmade Scrunchies.jpg" alt="">
+    <div class="des">
+     <span>handmade</span>
+     <h5>Colorful Scrunchies</h5>
+     <div class="star">
+       <i class="fas fa-star"></i>
+       <i class="fas fa-star"></i>
+       <i class="fas fa-star"></i>
+       <i class="fas fa-star"></i>
+       <i class="fas fa-star"></i>
+   
+     </div>
+     <h4>Rs 30</h4>
+   </div>  
+   <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+</div>
+       </div> -->
+    <section class="main-section ">
+      <div class="product-container">
+
+        <div class="products">
+          <div class="product">
+            <div class="product-under">
+              <figure class="product-image">
+                <img src="img\p1.jpeg" alt="popular labtops and computers" />
+                <div class="product-over">
+                  <button class="btn btn-small addToCart" data-product-id="1">
+                    <i class="fas fa-cart-plus"></i>Add
+                    to cart
+                  </button>
+                  <a href="sproduct.html" class="btn btn-small">More Info</a>
+                </div>
+              </figure>
+              <div class="product-summary">
+                <h4 class="productName">Combo Earrings</h4>
+                <span class="stars"></span>
+                <p>
+                 Contains 5 different pair of Earrings
+                </p>
+                <h6 class="price">
+                  ₹<span class="priceValue">260</span>
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-under">
+              <figure class="product-image">
+                <img src="img\p2.jpeg" alt="popular labtops and computers" />
+                <div class="product-over">
+                  <button class="btn btn-small addToCart" data-product-id="2">
+                    <i class="fas fa-cart-plus"></i>Add
+                    to cart
+                  </button>
+                  <a href="https://in.search.yahoo.com/search;_ylt=Awr1QK2RUbBk4TIAvR27HAx.;_ylc=X1MDMjExNDcyMzAwMwRfcgMyBGZyA21jYWZlZQRmcjIDc2EtZ3Atc2VhcmNoBGdwcmlkA1Y2S0NDOEppUThpZTJHRmdBMzNNT0EEbl9yc2x0AzAEbl9zdWdnAzEEb3JpZ2luA2luLnNlYXJjaC55YWhvby5jb20EcG9zAzEEcHFzdHIDWmlyY29uIFJpbmcgBHBxc3RybAMxMgRxc3RybAMxNwRxdWVyeQN6aXJjb24lMjBzdG9uZSUyMHJpbmcEdF9zdG1wAzE2ODkyNzY4MjkEdXNlX2Nhc2UD?p=zircon+stone+ring&fr2=sa-gp-search&fr=mcafee&vm=r&type=E211IN1289G0" class="btn btn-small">More Info</a>
+                </div>
+              </figure>
+              <div class="product-summary">
+                <h4 class="productName">Zircon Ring</h4>
+                <span class="stars"></span>
+                <p>
+                  Ring with Green Zircon Stone 
+                </p>
+                <h6 class="price">
+                  ₹<span class="priceValue">220</span>
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-under">
+              <figure class="product-image">
+                <img src="img\p3.jpeg" alt="popular labtops and computers" />
+                <div class="product-over">
+                  <button class="btn btn-small addToCart" data-product-id="3">
+                    <i class="fas fa-cart-plus"></i>Add
+                    to cart
+                  </button>
+                  <a href="sproduct.html" class="btn btn-small">More Info</a>
+                </div>
+              </figure>
+              <div class="product-summary">
+                <h4 class="productName">Fashionable Ring</h4>
+                <span class="stars"></span>
+                <p>
+                 Pink heart stone ring
+                </p>
+                <h6 class="price">
+                  ₹<span class="priceValue">163</span>
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-under">
+              <figure class="product-image">
+                <img src="img\p4.jpeg" alt="popular labtops and computers" />
+                <div class="product-over">
+                  <button class="btn btn-small addToCart" data-product-id="4">
+                    <i class="fas fa-cart-plus"></i>Add
+                    to cart
+                  </button>
+                  <a href="sproduct.html" class="btn btn-small">More Info</a>
+                </div>
+              </figure>
+              <div class="product-summary">
+                <h4 class="productName">Glass Bracelet</h4>
+                <span class="stars"></span>
+                <p>
+                 Radiant and beautiful Bracelet
+                </p>
+                <h6 class="price">
+                  ₹<span class="priceValue">150</span>
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-under">
+              <figure class="product-image">
+                <img src="img\p5.jpeg" alt="popular labtops and computers" />
+                <div class="product-over">
+                  <button class="btn btn-small addToCart" data-product-id="5">
+                    <i class="fas fa-cart-plus"></i>Add
+                    to cart
+                  </button>
+                  <a href="sproduct.html" class="btn btn-small">More Info</a>
+                </div>
+              </figure>
+              <div class="product-summary">
+                <h4 class="productName">Copper Ring</h4>
+                <span class="stars"></span>
+                <p>
+                 Copper ring with a beautiful stone in between
+                </p>
+                <h6 class="price">
+                  ₹<span class="priceValue">175</span>
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-under">
+              <figure class="product-image">
+                <img src="img\p6.jpeg" alt="popular labtops and computers" />
+                <div class="product-over">
+                  <button class="btn btn-small addToCart" data-product-id="6">
+                    <i class="fas fa-cart-plus"></i>Add
+                    to cart
+                  </button>
+                  <a href="sproduct.html" class="btn btn-small">More Info</a>
+                </div>
+              </figure>
+              <div class="product-summary">
+                <h4 class="productName">Combo Earrings</h4>
+                <span class="stars"></span>
+                <p>
+                  Contains 5 different pair of Earrings
+                </p>
+                <h6 class="price">
+                  ₹<span class="priceValue">220</span>
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-under">
+              <figure class="product-image">
+                <img src="img\p7.jpeg" alt="popular labtops and computers" />
+                <div class="product-over">
+                  <button class="btn btn-small addToCart" data-product-id="7">
+                    <i class="fas fa-cart-plus"></i>Add
+                    to cart
+                  </button>
+                  <a href="sproduct.html" class="btn btn-small">More Info</a>
+                </div>
+              </figure>
+              <div class="product-summary">
+                <h4 class="productName">Evil Eye Necklace</h4>
+                <span class="stars"></span>
+                <p>
+                  Exclusive Evil eye necklace 
+                </p>
+                <h6 class="price">
+                  ₹<span class="priceValue">250</span>
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-under">
+              <figure class="product-image">
+                <img src="img\p8.jpeg" alt="popular labtops and computers" />
+                <div class="product-over">
+                  <button class="btn btn-small addToCart" data-product-id="8">
+                    <i class="fas fa-cart-plus"></i>Add
+                    to cart
+                  </button>
+                  <a href="detail_page.html" class="btn btn-small">More Info</a>
+                </div>
+              </figure>
+              <div class="product-summary">
+                <h4 class="productName">Evil Eye Necklace</h4>
+                <span class="stars"></span>
+                <p>
+                  Exclusive Evil eye necklace
+                </p>
+                <h6 class="price">
+                  ₹<span class="priceValue">250</span>
+                </h6>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+  </section>
+
+  <section id="banner" class="section-m1">
+    <h4>Jewellery Section</h4>
+    <h2> <span>Minimal Price</span> - All the Jewelleries & Scrunchies</h2>
+    <button class="normal"><a href="shop.html">Explore More</a></button>
+  </section>
+  <section id="product1" class="section-p1">
+    <h2>New Arrivals</h2>
+    <p>Summer Collection New Designs</p>
+    <!-- <div class = "pro-container">
+          <div class="pro">
+              <img src="img\Handmade Scrunchies.jpg" alt="">
+              <div class="des">
+               <span>handmade</span>
+               <h5>Colorful Scrunchies</h5>
+               <div class="star">
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+                 <i class="fas fa-star"></i>
+             
+               </div>
+               <h4>Rs 30</h4>
+             </div>  
+             <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+          </div>
+          <div class="pro">
+           <img src="img\Handmade Scrunchies.jpg" alt="">
+           <div class="des">
+            <span>handmade</span>
+            <h5>Colorful Scrunchies</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+          
+            </div>
+            <h4>Rs 30</h4>
+          </div>  
+          <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+       </div>
+       <div class="pro">
+         <img src="img\Handmade Scrunchies.jpg" alt="">
+         <div class="des">
+          <span>handmade</span>
+          <h5>Colorful Scrunchies</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        
+          </div>
+          <h4>Rs 30</h4>
+        </div>  
+        <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+     </div>
+     <div class="pro">
+       <img src="img\Handmade Scrunchies.jpg" alt="">
+       <div class="des">
+        <span>handmade</span>
+        <h5>Colorful Scrunchies</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+      
+        </div>
+        <h4>Rs 30</h4>
+      </div>  
+      <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+   </div>
+   <div class="pro">
+     <img src="img\Handmade Scrunchies.jpg" alt="">
+     <div class="des">
+      <span>handmade</span>
+      <h5>Colorful Scrunchies</h5>
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+    
+      </div>
+      <h4>Rs 30</h4>
+    </div>  
+    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+     </div>
+     <div class="pro">
+       <img src="img\Handmade Scrunchies.jpg" alt="">
+       <div class="des">
+        <span>handmade</span>
+        <h5>Colorful Scrunchies</h5>
+        <div class="star">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+      
+        </div>
+        <h4>Rs 30</h4>
+      </div>  
+      <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+   </div>
+   <div class="pro">
+     <img src="img\Handmade Scrunchies.jpg" alt="">
+     <div class="des">
+      <span>handmade</span>
+      <h5>Colorful Scrunchies</h5>
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+    
+      </div>
+      <h4>Rs 30</h4>
+    </div>  
+    <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+ </div>
+ <div class="pro">
+   <img src="img\Handmade Scrunchies.jpg" alt="">
+   <div class="des">
+    <span>handmade</span>
+    <h5>Colorful Scrunchies</h5>
+    <div class="star">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+  
+    </div>
+    <h4>Rs 30</h4>
+  </div>  
+  <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+</div>
+      </div> -->
+
+    <section class="main-section ">
+      <div class="product-container">
+
+        <div class="products">
+          <div class="product">
+            <div class="product-under">
+              <figure class="product-image">
+                <img src="img\p9.jpeg" alt="popular labtops and computers" />
+                <div class="product-over">
+                  <button class="btn btn-small addToCart" data-product-id="9">
+                    <i class="fas fa-cart-plus"></i>Add
+                    to cart
+                  </button>
+                  <a href="detail_page.html" class="btn btn-small">More Info</a>
+                </div>
+              </figure>
+              <div class="product-summary">
+                <h4 class="productName">Evil Eye Necklace</h4>
+                <span class="stars"></span>
+                <p>
+                 Heart shaped pendant Necklace
+                </p>
+                <h6 class="price">
+                  ₹<span class="priceValue">250</span>
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-under">
+              <figure class="product-image">
+                <img src="img\p10.jpeg" alt="popular labtops and computers" />
+                <div class="product-over">
+                  <button class="btn btn-small addToCart" data-product-id="10">
+                    <i class="fas fa-cart-plus"></i>Add
+                    to cart
+                  </button>
+                  <a href="detail_page.html" class="btn btn-small">More Info</a>
+                </div>
+              </figure>
+              <div class="product-summary">
+                <h4 class="productName">Evil Eye Necklace</h4>
+                <span class="stars"></span>
+                <p>
+                  Sun shaped pendant Necklace
+             
+                </p>
+                <h6 class="price">
+                  ₹<span class="priceValue">250</span>
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-under">
+              <figure class="product-image">
+                <img src="img\p11.jpeg" alt="popular labtops and computers" />
+                <div class="product-over">
+                  <button class="btn btn-small addToCart" data-product-id="11">
+                    <i class="fas fa-cart-plus"></i>Add
+                    to cart
+                  </button>
+                  <a href="detail_page.html" class="btn btn-small">More Info</a>
+                </div>
+              </figure>
+              <div class="product-summary">
+                <h4 class="productName">Evil Eye Necklace</h4>
+                <span class="stars"></span>
+                <p>
+                 Evil Eye Necklace with a unique design
+                </p>
+                <h6 class="price">
+                  ₹<span class="priceValue">250</span>
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-under">
+              <figure class="product-image">
+                <img src="img\p12.jpeg" alt="popular labtops and computers" />
+                <div class="product-over">
+                  <button class="btn btn-small addToCart" data-product-id="12">
+                    <i class="fas fa-cart-plus"></i>Add
+                    to cart
+                  </button>
+                  <a href="detail_page.html" class="btn btn-small">More Info</a>
+                </div>
+              </figure>
+              <div class="product-summary">
+                <h4 class="productName">Satin Fabric Scrunchy</h4>
+                <span class="stars"></span>
+                <p>
+                  Satin fabric scrunchy XL size
+                </p>
+                <h6 class="price">
+                  ₹<span class="priceValue">20</span>
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section id="newsletter" class="section-p1 section-m1">
+    <div class="newstext">
+      <h4>Sign Up For Newsletters</h4>
+      <p>Get E-mail updates about our latest shop and <span>special offers.</span>
+      </p>
+    </div>
+    <div class="form">
+      <form action="https://script.google.com/macros/s/AKfycbywHGuZte0F44XbJgivRtz87KnqOK5FDdWMIWXtF8a4H7wnMh4UvUGSnHfs56Qxi7Ul/exec" method="post"> 
+      <input type="text"  name="email" placeholder="Your email address">
+      <button class="normal">Sign Up</button>
+      </form>
+    </div>
+    </section>
+
+   
+
+  <footer class="section-p1">
+    <div class="col">
+      <img src="img\Logo.jpeg" class="logo" alt=""><br>
+      <h4>Contact At</h4>
+      <p><strong>Address: </strong> B-52/2, Aamir Park Society, N/r Memon hall, Juhapura</p>
+      <p><strong>Phone: </strong>9484611810</p>
+      <p><strong>Hours: </strong>9 AM to 9 PM</p>
+      <div class="follow">
+        <h4>Follow us</h4>
+        <div class="icon">
+          <a href="https://m.facebook.com/profile.php?id=100093313973186&v=info&ref=ig_profile_ac&funlid=esyN2OdeI6j4sCaz"> <i class="fab fa-facebook-f">&ensp; </i></a>
+          <a href="https://m.facebook.com/profile.php?id=100093313973186&v=info&ref=ig_profile_ac&funlid=esyN2OdeI6j4sCaz"></a><i class="fab fa-twitter">&ensp; </i></a>
+          <a href="https://instagram.com/mimisstore.in?igshid=YmM0MjE2YWMzOA=="><i class="fab fa-instagram">&ensp; </i></a>
+          <a href="https://www.pinterest.com/mimi_sstore/?invite_code=0e7c68d6cbeb4784a09a07487ce3e92b&sender=947444977766612737"><i class="fab fa-pinterest-p">&ensp; </i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <h4>About</h4>
+      <a href="about.html">About Us</a>
+      <a href="#">Delivery Information</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="col">
+      <h4>My Account</h4>
+      <a href="#">Sign In</a>
+      <a href="#">View Cart</a>
+      <a href="#">My wishlist</a>
+      <a href="#">Track My Order</a>
+      <a href="#">Help</a>
+    </div>
+    <div class="col install">
+      <h4>Install App</h4>
+      <p>From App Store or Google Play</p>
+      <div class="row">
+        <img src="img/playstore.png" class="logo" id="playstore" alt="">
+      </div>
+      <p>Secured Payment Gateways</p>
+      <img src="img/card.png" class="pay" alt="">
+    </div>
+    <div class="copyright">
+      <p>© 2023 Mimi'sStore | <a href="https://www.linkedin.com/in/aiman-shaikh-1a89b022a/">Developed by Aiman Shaikh</a> </p>
+    </div>
+
+  </footer>
+  <script src="script.js">
+  </script>
+
+  <script src="cart2.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+@media screen and (max-width: 500px) {
+    .product-under {
+        width: 99%;
+        height: 84%;
+    }
+    .product{
+        margin-left: 93px;
+        margin-top: 12px;
+        margin-bottom: -63px;
+    }
+    .main-section h3 {
+        margin-left: 64px;
+        font-size: 57px;
+        color: rgb(99, 10, 57);
+        padding: 0px;
+    }
+    .product-container {
+        width: 110%;
+        margin-left: 23px;
+    }
+    .price{
+        margin-left: 23px;
+        margin-top: 12px;
+     
+    }
+    #pagination {
+        text-align: center;
+        margin-left: 159px;
+     
+    }
+    /* sproduct page */
+    #sproducthead {
+        padding: 10px 30px;
+        width: 165%;
+    }
+    #prodetails {
+        display: flex;
+        flex-direction: column;
+        width: 165%;
+    }
+    #sproductprod{
+        margin-right: 105px;
+        margin-left: -14px;
+    }
+    #h2prod{
+        margin-left: 50px;
+    }
+    #pprod{
+        margin-left: 50px;
+    }
+    #newsletter .form {
+        width: 141%;
+        margin-left: 55px;
+    }
+    #newsletter p {
+        font-size: 19px;
+        font-weight: 600;
+        color: beige;
+        margin-left: 55px;
+    }
+    #newsletter h4 {
+        margin-left: -182px;
+        font-size: 24px;
+        font-weight: 700;
+        color: #fffffffc;
+    }
+    #newsletter button {
+        background-color: cadetblue;
+        color: rgb(213, 219, 232);
+        white-space: nowrap;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        margin-left: 55px;
+ 
+    }
+    footer .col {
+        padding-left: 63px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+}
